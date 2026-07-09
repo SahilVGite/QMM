@@ -4,7 +4,7 @@ export const marketMaking = {
     image: "/images/hero-market-making.jpg",
   },
   intro: {
-    title: "Continuous Two Way Liquidity",
+    title: "Continuous Two<br />Way Liquidity",
     paragraphs: [
       "QMM provides consistent bid-ask pricing across multiple asset classes, ensuring reliable liquidity under all market conditions. Our approach improves price discovery, tightens spreads, and enhances execution quality — particularly during periods of volatility.",
       "We collaborate closely with exchanges, regulators, and institutional counterparties to support efficient and orderly markets.",
@@ -14,27 +14,27 @@ export const marketMaking = {
     {
       id: "spreads",
       title: "Competitive bid-ask spreads with meaningful depth",
-      icon: "dollar",
+      image: "/images/MarketMakingCard1.png",
     },
     {
       id: "facilitation",
       title: "Facilitation",
-      icon: "handshake",
+      image: "/images/MarketMakingCard2.png",
     },
     {
       id: "multi-asset",
       title: "Multi-asset liquidity provision",
-      icon: "drops",
+      image: "/images/MarketMakingCard3.png",
     },
     {
       id: "systems",
       title: "Advanced trading systems with real-time risk monitoring",
-      icon: "monitor",
+      image: "/images/MarketMakingCard4.png",
     },
     {
       id: "relationships",
       title: "Strong institutional relationships across the region and beyond",
-      icon: "globe",
+      image: "/images/MarketMakingCard5.png",
     },
   ],
 };

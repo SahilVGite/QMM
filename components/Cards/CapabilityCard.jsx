@@ -1,26 +1,17 @@
-import {
-  DollarSign,
-  Handshake,
-  Droplets,
-  Monitor,
-  Globe,
-} from "lucide-react";
+import Image from "next/image";
 
-const iconMap = {
-  dollar: DollarSign,
-  handshake: Handshake,
-  drops: Droplets,
-  monitor: Monitor,
-  globe: Globe,
-};
-
-export default function CapabilityCard({ title, icon }) {
-  const Icon = iconMap[icon] || DollarSign;
-
+export default function CapabilityCard({ title, image }) {
   return (
-    <div className="flex min-h-[180px] flex-col bg-green-sage p-6 sm:min-h-[200px] sm:p-8">
-      <Icon className="mb-4 h-8 w-8 text-navy" strokeWidth={1.5} />
-      <p className="font-title text-base font-bold leading-snug text-navy sm:text-lg">
+    <div className="flex h-full flex-col bg-[#7EA863]/30 p-6 sm:p-8">
+      <Image
+        src={image}
+        alt=""
+        width={80}
+        height={80}
+        className="mb-4 h-auto w-fit max-h-[72px] object-contain"
+        aria-hidden="true"
+      />
+      <p className="font-body text-[24px] font-bold leading-snug text-[#323232]">
         {title}
       </p>
     </div>

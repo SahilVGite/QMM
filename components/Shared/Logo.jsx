@@ -5,7 +5,7 @@ const sizeClasses = {
   small: "h-7 w-auto",
   default: "h-8 w-auto sm:h-10 md:h-14",
   compact: "h-7 w-auto sm:h-8 md:h-9",
-  large: "h-16 w-auto sm:h-20 md:h-[92px]",
+  large: "h-10 w-auto sm:h-12 md:h-14 lg:h-16 xl:h-[92px]",
 };
 
 export default function Logo({ className = "", size = "default" }) {
