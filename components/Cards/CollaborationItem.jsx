@@ -1,28 +1,23 @@
-import {
-  ArrowLeftRight,
-  Landmark,
-  Building2,
-  TrendingUp,
-} from "lucide-react";
+import Image from "next/image";
 
-const iconMap = {
-  arrows: ArrowLeftRight,
-  safe: Landmark,
-  bank: Building2,
-  chart: TrendingUp,
-};
-
-export default function CollaborationItem({ title, icon, showDivider = false }) {
-  const Icon = iconMap[icon] || ArrowLeftRight;
-
+export default function CollaborationItem({ title, image, showDivider = false }) {
   return (
     <div
-      className={`flex flex-col gap-4 px-4 py-6 sm:px-6 sm:py-8 ${
-        showDivider ? "border-l border-white/20" : ""
+      className={`flex h-full flex-col gap-4 px-4 py-6 [@media(min-width:1280px)]::px-12 sm:py-8 ${
+        showDivider
+          ? "lg:border-l lg:border-[#96C975] lg:[border-left-width:0.52px]"
+          : ""
       }`}
     >
-      <Icon className="h-8 w-8 text-orange" strokeWidth={1.5} />
-      <p className="font-body text-sm leading-relaxed text-white sm:text-base">
+      <Image
+        src={image}
+        alt=""
+        width={80}
+        height={80}
+        className="h-auto w-fit max-h-[72px] object-contain"
+        aria-hidden="true"
+      />
+      <p className="font-body text-lg font-medium leading-relaxed tracking-[-2px] text-[#F1F2F2] sm:text-xl lg:text-[29px]">
         {title}
       </p>
     </div>

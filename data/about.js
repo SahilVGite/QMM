@@ -5,28 +5,28 @@ export const hero = {
 
 export const valueProposition = {
   title: "Independent.<br />Principal.<br />Aligned.",
-  body: "QMM operates as an independent principal market maker, deploying our own capital to provide continuous liquidity across asset classes. Our model eliminates client conflicts and aligns our performance with market quality — tighter spreads, deeper books, and reliable execution under all conditions.",
+  body: "QMM operates exclusively with its own capital, ensuring full alignment with market integrity and long-term performance. Our diversified, multi-asset strategy supports disciplined risk management and consistent liquidity provision across market cycles.",
 };
 
 export const collaborators = [
   {
     id: "exchanges",
     title: "Exchanges and regulators",
-    icon: "arrows",
+    image: "/images/OurModelCard1.png",
   },
   {
     id: "sovereign",
     title: "Sovereign wealth funds and asset managers",
-    icon: "safe",
+    image: "/images/OurModelCard2.png",
   },
   {
     id: "banks",
     title: "Banks, brokers, and trading desks",
-    icon: "bank",
+    image: "/images/OurModelCard3.png",
   },
   {
     id: "listed",
     title: "Listed companies seeking long-term liquidity support",
-    icon: "chart",
+    image: "/images/OurModelCard4.png",
   },
 ];
